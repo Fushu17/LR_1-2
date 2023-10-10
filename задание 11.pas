@@ -1,11 +1,19 @@
-﻿var z,a,b,c,z2:integer;
+﻿var n,i,sum:integer;
 begin
-write('Введите трёхзначное число ');
-readln(z);
-a:=z div 100;
-b:=z mod 100 div 10;
-c:=z mod 10;
-z2:=c*100+b*10+a;
-writeln('Получившееся число = ',z2);
-writeln('Разность = ',z-z2);
+readln(n);
+i:=0;
+sum:=1;
+if n>0 then
+  while i<>n do
+  begin
+i:=i+1;  sum:=sum*i;
+
+end
+else
+  while i<>n do
+  begin
+   i:=i-1; sum:=sum*i;
+    
+  end;
+print(sum)
 end.

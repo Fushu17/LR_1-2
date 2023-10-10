@@ -1,7 +1,6 @@
-﻿var a,b,c :real;
+﻿var a:integer;
 begin
-  writeln('Введите длину катетов');
-  readln(a,b);
-  c:=sqrt(sqr(a)+sqr(b));
-  writeln('Длина гипотенузы = ',c:1:3);
+  for a:=2 to 99 do
+    if a mod 2 = 0 then
+      writeln(a)
 end.

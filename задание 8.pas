@@ -1,10 +1,9 @@
-﻿var a1,a2,b1,b2:integer;
+﻿var a,b:integer;
+sum:real;
 begin
-  a1:=random(900)+100;
-  writeln('Трёхзначное число = ',a1);
-  a2:=random(9000)+1000;
-  writeln('Четырёхзначное число = ',a2);
-  b1:=a1 div 100;
-  b2:=a2 div 1000;
-  writeln('Первая цифра трёхзначного числа = ',b1,'. Первая цифра четырёхзначного числа = ',b2);
+  readln(b);
+  sum:=0;
+  for a:=1 to b do
+    sum:=sum+(1/a);
+  writeln(sum);
 end.

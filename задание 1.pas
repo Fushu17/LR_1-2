@@ -1,7 +1,5 @@
-﻿var  a,b:real;
+﻿var i, duym:integer;
 begin
-  write('Введите длину окружности: '); 
-  read(b);
-  a:= sqr(b)/(4*Pi);
-  write('Площадь круга = ',a:1:3);
+  for i:=1 to 20 do
+    writeln(i,' дюйм = ',i*2.54,' сантиметров');
 end.
